@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@drawable/shape_white_radius_10">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="he is tool title" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="80dp"
+        android:textColor="@color/color_666"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title"
+        tools:text="he is tool content" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_subtitle"
+        android:background="@null"
+        android:text="取消"
+        android:textColor="@color/color_333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#eee"
+        app:layout_constraintBottom_toTopOf="@+id/btn_left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:background="#eee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/btn_left"
+        android:background="@null"
+        android:text="确定"
+        android:textColor="@color/color_toolbar"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_left" />
+
+</android.support.constraint.ConstraintLayout>
