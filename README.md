@@ -4,7 +4,7 @@ android 小demo
 2.适用于添加购物车的dialog飞入动画
 
 （效果图）
-  ![image](https://github.com/pingcc/MyApplication/blob/master/Image/screenAnimal.gif?raw=true)
+  ![image](https://github.com/pingcc/AnimalSetApplication/blob/master/Image/screenAnimal.gif?raw=true)
 
 
 
